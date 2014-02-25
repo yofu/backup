@@ -159,7 +159,7 @@ func LastDir(dir string) (string, error) {
 }
 
 func main() {
-    runtime.GOMAXPROCS(8)
+    runtime.GOMAXPROCS(2)
     drive   := flag.String("d", "F", "Drive Letter")
     user    := flag.String("u", "fukushima", "User Name")
     Recurse := flag.Bool("r", true, "Recursive")
